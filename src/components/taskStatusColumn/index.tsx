@@ -14,7 +14,7 @@ const TaskStatusColumn = ({
           <TodoCard key={item.id} {...item} />
         ))}
       </div>
-      <AddTodo />
+      {/* <AddTodo /> */}
     </div>
   );
 };
