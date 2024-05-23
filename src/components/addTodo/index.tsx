@@ -62,7 +62,7 @@ const AddTodo = ({ columnType }: { columnType: string }) => {
           onBlur={()=>setShowTextInput(false)}
           onChange={(e) => handleInputTodoChange(e)}
           onKeyDown={(e) => handleInputOnKeyDown(e)}
-          className="mx-2 px-2 dark:bg-[#1e1f20]"
+          className="px-3 mt-5 w-60 py-2 rounded-lg dark:bg-[#1e1f20]"
           type="text"
         />
       )}
