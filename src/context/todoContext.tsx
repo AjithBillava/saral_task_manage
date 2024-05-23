@@ -46,7 +46,6 @@ const TodoProvider = ({ children }: { children: JSX.Element }) => {
       const data = await fetchData();
 
       setTodoList(data.todos);
-    //   console.log(data);
     };
 
     getData();
@@ -55,13 +54,11 @@ const TodoProvider = ({ children }: { children: JSX.Element }) => {
   useEffect(() => {
     const completeTodos = todoList?.filter((item) => item.completed);
     const inCompleteTodos = todoList?.filter((item) => !item.completed);
-    // console.log("🚀 ~ useEffect ~ completeTodos:", completeTodos);
-
+    
     setCompletedTodoList(completeTodos);
     setInCompletedTodoList(inCompleteTodos);
   }, [todoList]);
 
-  console.log(todoList);
 
   return (
     <TodoContext.Provider

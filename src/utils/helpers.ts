@@ -18,7 +18,13 @@ export const addTodo = async (taskStatus:boolean,todo:string)=>{
     }
 
     const {data} = await axios.post<todoType>('https://dummyjson.com/todos/add',bodyData)
+    return data
+    
+}
 
-    console.log(data)
+export const updateTodoStatus = async(taskStatus:boolean,id:string|undefined) =>{
+    
+    const {data} = await axios.put<todoType>(`https://dummyjson.com/todos/${id}`,{completed:taskStatus})
 
+    return data
 }
