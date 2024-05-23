@@ -19,3 +19,11 @@ export type fetchedDataType = {
   todos: todoType[];
   total: number;
 };
+
+
+export type intialValuesType = {
+  completedTodoList: todoType[];
+  inCompletedTodoList: todoType[];
+  setCompletedTodoList: React.Dispatch<React.SetStateAction<todoType[]>>;
+  setInCompletedTodoList: React.Dispatch<React.SetStateAction<todoType[]>>;
+};

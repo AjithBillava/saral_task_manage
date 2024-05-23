@@ -1,13 +1,7 @@
 import { createContext, useEffect, useState } from "react";
-import { todoType } from "../utils/dataTypes";
+import { intialValuesType, todoType } from "../utils/dataTypes";
 import { fetchData } from "../utils/helpers";
 
-export type intialValuesType = {
-  completedTodoList: todoType[];
-  inCompletedTodoList: todoType[];
-  setCompletedTodoList: React.Dispatch<React.SetStateAction<todoType[]>>;
-  setInCompletedTodoList: React.Dispatch<React.SetStateAction<todoType[]>>;
-};
 
 const intialValues: intialValuesType = {
   completedTodoList: [

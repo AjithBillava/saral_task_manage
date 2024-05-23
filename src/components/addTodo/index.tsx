@@ -1,5 +1,3 @@
-// type Props = {}
-
 import { useContext, useState } from "react";
 import { addTodo } from "../../utils/helpers";
 import { TodoContext } from "../../context/todoContext";

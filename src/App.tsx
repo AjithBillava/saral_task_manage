@@ -1,10 +1,7 @@
 
 import { useContext} from 'react'
 import './App.css'
-// import TodoCard from './components/todoCard'
-// import { fetchData } from './utils/helpers'
 import TaskStatusColumn from './components/taskStatusColumn'
-// import { todoType } from './utils/dataTypes'
 import { TodoContext } from './context/todoContext'
 import SideBar from './components/sideBar'
 
